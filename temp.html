@@ -1,0 +1,36 @@
+<html>
+	<head>
+	<script src="jquery-1.8.3.js"></script>
+	<script type="text/javascript"  src="date.js"></script>
+	</head>
+	<body>
+		<div id="debug"></div>
+		<script>
+		(function() {
+			// var link = "http://insigniadevs.com/tvapp/getAllItemsAsJSON.php?maxShows=100&callback=?";
+			// $("#debug").append("start");
+   //          $.getJSON(link, function (result) {
+   //              //$("#progressRing").hide();
+   //              $("#debug").append("done");
+   //              $("#debug").append(result[0].sname);
+   //              //var list = new WinJS.Binding.List(result);
+   //              //DataExample.itemList = list;
+   //              //parseResult(result);
+   //          });
+
+
+            var leftKey = "2013-1-22";
+            var rightKey = "2013-1-10";
+            var leftDay = Date.parse(leftKey);
+        var rightDay = Date.parse(rightKey);
+        //return rightKey - leftKey;
+        //return Date.compare(rightDay, leftDay);
+        //alert(Date.compare(leftDay, rightDay));
+        alert(leftDay-rightDay);
+
+		})();
+		 
+	</script>
+	
+	</body>
+	</html>
